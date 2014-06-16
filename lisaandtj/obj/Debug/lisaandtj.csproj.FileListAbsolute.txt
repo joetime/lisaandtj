@@ -1,0 +1,10 @@
+C:\Users\jscala\Source\Repos\lisaandtj\lisaandtj\bin\lisaandtj.dll.config
+C:\Users\jscala\Source\Repos\lisaandtj\lisaandtj\bin\lisaandtj.dll
+C:\Users\jscala\Source\Repos\lisaandtj\lisaandtj\bin\lisaandtj.pdb
+C:\Users\jscala\Source\Repos\lisaandtj\lisaandtj\obj\Debug\lisaandtj.csprojResolveAssemblyReference.cache
+C:\Users\jscala\Source\Repos\lisaandtj\lisaandtj\obj\Debug\lisaandtj.dll
+C:\Users\jscala\Source\Repos\lisaandtj\lisaandtj\obj\Debug\lisaandtj.pdb
+C:\Users\jscala\Source\Repos\lisaandtj\lisaandtj\bin\EntityFramework.dll
+C:\Users\jscala\Source\Repos\lisaandtj\lisaandtj\bin\EntityFramework.SqlServer.dll
+C:\Users\jscala\Source\Repos\lisaandtj\lisaandtj\bin\EntityFramework.xml
+C:\Users\jscala\Source\Repos\lisaandtj\lisaandtj\bin\EntityFramework.SqlServer.xml

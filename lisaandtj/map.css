@@ -1,0 +1,11 @@
+﻿#map {
+    border: 4px solid #60A4F0;
+}
+
+#conservatory-info, #hotel-info {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+    #conservatory-info a, #hotel-info a {
+        text-decoration: none;
+    }
