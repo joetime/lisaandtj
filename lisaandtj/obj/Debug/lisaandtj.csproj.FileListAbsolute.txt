@@ -8,3 +8,13 @@ C:\Users\jscala\Source\Repos\lisaandtj\lisaandtj\bin\EntityFramework.dll
 C:\Users\jscala\Source\Repos\lisaandtj\lisaandtj\bin\EntityFramework.SqlServer.dll
 C:\Users\jscala\Source\Repos\lisaandtj\lisaandtj\bin\EntityFramework.xml
 C:\Users\jscala\Source\Repos\lisaandtj\lisaandtj\bin\EntityFramework.SqlServer.xml
+C:\Users\joetime\Source\Repos\lisaandtj\lisaandtj\bin\lisaandtj.dll.config
+C:\Users\joetime\Source\Repos\lisaandtj\lisaandtj\bin\lisaandtj.dll
+C:\Users\joetime\Source\Repos\lisaandtj\lisaandtj\bin\lisaandtj.pdb
+C:\Users\joetime\Source\Repos\lisaandtj\lisaandtj\bin\EntityFramework.dll
+C:\Users\joetime\Source\Repos\lisaandtj\lisaandtj\bin\EntityFramework.SqlServer.dll
+C:\Users\joetime\Source\Repos\lisaandtj\lisaandtj\bin\EntityFramework.xml
+C:\Users\joetime\Source\Repos\lisaandtj\lisaandtj\bin\EntityFramework.SqlServer.xml
+C:\Users\joetime\Source\Repos\lisaandtj\lisaandtj\obj\Debug\lisaandtj.csprojResolveAssemblyReference.cache
+C:\Users\joetime\Source\Repos\lisaandtj\lisaandtj\obj\Debug\lisaandtj.dll
+C:\Users\joetime\Source\Repos\lisaandtj\lisaandtj\obj\Debug\lisaandtj.pdb

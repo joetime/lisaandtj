@@ -85,6 +85,7 @@
       <DependentUpon>lisaandtjModel.edmx</DependentUpon>
       <LastGenOutput>lisaandtjModel.cs</LastGenOutput>
     </Content>
+    <None Include="Properties\PublishProfiles\godaddy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
