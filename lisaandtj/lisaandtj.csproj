@@ -137,6 +137,8 @@
     <Content Include="Default.aspx" />
     <Content Include="map.css" />
     <Content Include="RsvpForm.ascx" />
+    <Content Include="Rsvps\Default.aspx" />
+    <Content Include="Rsvps\rsvps.css" />
     <Content Include="style.css" />
     <Content Include="top.css" />
     <Content Include="Web.config" />
@@ -177,6 +179,13 @@
     </Compile>
     <Compile Include="RsvpForm.ascx.designer.cs">
       <DependentUpon>RsvpForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Rsvps\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rsvps\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

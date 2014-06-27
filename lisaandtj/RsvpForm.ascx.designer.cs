@@ -31,22 +31,13 @@ namespace lisaandtj {
         protected global::System.Web.UI.WebControls.TextBox GuestEmailTextBox;
         
         /// <summary>
-        /// NumGuestsTextBox control.
+        /// NumGuestsDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NumGuestsTextBox;
-        
-        /// <summary>
-        /// CannotAttendCheckBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CannotAttendCheckBox;
+        protected global::System.Web.UI.WebControls.DropDownList NumGuestsDropDownList;
         
         /// <summary>
         /// MessageTextBox control.

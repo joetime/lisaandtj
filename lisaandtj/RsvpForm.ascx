@@ -18,22 +18,36 @@
         
     </p>
     <p class="size-small font-annie">
-        I'll be bringing along
-        <asp:TextBox ID="NumGuestsTextBox" runat="server" CssClass="input-short bold font-annie color4 bgcolor3"
-            required type="number"></asp:TextBox>
+        Please tell us 
+        <asp:DropDownList ID="NumGuestsDropDownList" runat="server" 
+            CssClass="guests-dropdown font-annie" required>
+
+            <asp:ListItem Value="" Text="Who's coming..."></asp:ListItem>
+
+            <asp:ListItem Value="0" Text="Sadly, I cannot attend :("></asp:ListItem>
+
+            <asp:ListItem Value="1" Text="It'll just be me :) (1 guest)"></asp:ListItem>
+            <asp:ListItem Value="2" Text="Myself and that other person (2)"></asp:ListItem>
+            <asp:ListItem Value="3" Text="Me and two others (3)"></asp:ListItem>
+            <asp:ListItem Value="4" Text="I'm rolling four deep (4) "></asp:ListItem>
+            <asp:ListItem Value="5" Text="The five of us (5)"></asp:ListItem>
+            <asp:ListItem Value="6" Text="The whole gang! (6+)"></asp:ListItem>
+
+        </asp:DropDownList>
         
-        guests.
     </p>
-    <p class="size-small">
+    <%--<p class="size-small">
         <label class="font-annie">
-            <asp:CheckBox ID="CannotAttendCheckBox" runat="server" CssClass="input-checkbox" />
+            <asp:CheckBox ID="CannotAttendCheckBox" runat="server" 
+                CssClass="input-checkbox" />
             
             Sadly, I cannot attend :(
         </label>
-    </p>
+    </p>--%>
     <p class="size-small color2">
         <span class="font-apple">A message for the bride and groom:</span><br />
-        <asp:TextBox ID="MessageTextBox" runat="server" TextMode="MultiLine" CssClass="textarea font-georgia bgcolor3 size-small" Rows="5"></asp:TextBox>
+        <asp:TextBox ID="MessageTextBox" runat="server" TextMode="MultiLine" 
+            CssClass="textarea font-georgia size-small guest-message" Rows="5"></asp:TextBox>
         
     </p>
     <p>
@@ -48,30 +62,28 @@
 <script runat="server">
     protected void RsvpButton_Click(object sender, EventArgs e)
     {
-        // Validate number of guests
-        int numGuests = 0;
+        bool success = false;
+        string message = "";
+        
         try
         {
-            numGuests = Int32.Parse(NumGuestsTextBox.Text) + 1;
+            Guest guest = new Guest();
+            guest.Name = GuestNameTextBox.Text;
+            guest.Email = GuestEmailTextBox.Text;
+            guest.Message = MessageTextBox.Text;
+            guest.Attending = !CannotAttendCheckBox.Checked;
+            guest.Guests = Int32.Parse(NumGuestsDropDownList.SelectedValue);
+            guest.DateStamp = DateTime.Now;
+
+            town6668Entities1 model = new town6668Entities1();
+            model.Guests.Add(guest);
+
+            model.SaveChanges();
         }
         catch
         {
-            // Error condition
-            return;
+
         }
-        
-        Guest guest = new Guest();
-        guest.Name = GuestNameTextBox.Text;
-        guest.Email = GuestEmailTextBox.Text;
-        guest.Message = MessageTextBox.Text;
-        guest.Attending = !CannotAttendCheckBox.Checked;
-        guest.Guests = numGuests;
-        guest.DateStamp = DateTime.Now;
-
-        town6668Entities1 model = new town6668Entities1();
-        model.Guests.Add(guest);
-
-        model.SaveChanges();
     }
 </script>
 

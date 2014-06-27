@@ -1,0 +1,32 @@
+﻿#RsvpTable, .dataTables_wrapper {
+    font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', 
+        Freesans, sans-serif;
+    border: 0;
+    font-size: 12px;
+}
+    #RsvpTable tbody {
+        
+    }
+
+        #RsvpTable tbody tr {
+            background-color: rgba(255,255,233,.5);
+        }
+
+table.dataTable thead th, table.dataTable thead td {
+    border-bottom: 1px solid #ccc;
+}
+
+input[type=search] {
+    border: 0;
+    background-color: rgba(255,255,233,.5);
+    text-align: left;
+    font-size: 15px;
+    padding: 6px;
+}
+#RsvpTable_filter label {
+    color: #888;
+}
+#RsvpTable a {
+    text-decoration: none;
+    color: #4494cc;
+}
