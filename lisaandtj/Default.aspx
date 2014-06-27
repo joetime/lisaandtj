@@ -55,17 +55,9 @@
             <img id="wreath" src="assets/invites/circle.png" width="450px" />
         </div>
 
-        <div id="LMTJ1" style="cursor: pointer; position: absolute; font-family: 'Unkempt'; margin-top: 70px; font-size: 140px; margin-bottom: 40px; top: 137px; left: 50%; margin-left: -165px; font-size: 122px;"
+        <div id="LMTJ1" style="position: absolute; font-family: 'Unkempt'; margin-top: 70px; font-size: 140px; margin-bottom: 40px; top: 137px; left: 50%; margin-left: -165px; font-size: 122px;"
              title="Unkempt"
              class="color2">LM<span class="heart color3">&hearts;</span>TJ</div>
-
-<%--        <div id="LMTJ2" style="cursor: pointer;  position: absolute; font-family: 'Kranky'; top: 134px; margin-top: 70px; left: 50%; font-size: 140px; margin-bottom: 40px; margin-left: -184px; font-size: 120px;"
-             title="Kranky"
-             class="color2" style="">LM<span class="heart color3">&hearts;</span>TJ</div>
-
-        <div id="LMTJ3" style="cursor: pointer; position: absolute; font-family: 'Ribeye Marrow'; top: 141px; margin-top: 70px; margin-bottom: 40px; left: 50%; left: 50%; margin-left: -176px; font-size: 102px;"
-             title="Ribeye Marrow"
-             class="color2" style="">LM<span class="heart color3">&hearts;</span>TJ</div>--%>
 
         <!-- Intro text -->
 
@@ -116,7 +108,7 @@
         </a>
 
         <p class="font-annie">
-            You can check out their <a href="http://www.newjerseystatefair.org/conservatory/conservatory.cfm" target="_blank">website</a> for more info.
+            You can check out their <a href="http://njstatefair.org/conservatory/index.html" target="_blank">website</a> for more info.
         </p>
 
         <!--
@@ -146,7 +138,7 @@
         <h3 class="color5 font-apple">Can I crash at your place?</h3>
         <p class="font-annie">
             Sorry, no! But we've set some rooms aside if you are coming from out of town. Check out the 
-            <a href="http://www.ihg.com/holidayinnexpress/hotels/us/en/newton/nwtnj/hoteldetail">Holiday Inn Express in Newton, NJ</a>.
+            <a href="http://www.ihg.com/holidayinnexpress/hotels/us/en/newton/nwtnj/hoteldetail" target="_blank">Holiday Inn Express in Newton, NJ</a>.
         </p>
         <p class="font-annie">&hearts; Use group code "USW" to get the group discount :)</p>
         <div id="hotel-info" class="font-annie">
@@ -263,15 +255,7 @@
             </div>
             <p class="quote color4 font-apple center">Joe Scala</p>
         </div>
-        <div class=third>
-            <div class="circle circle-small">
-                <img src="assets/tj&andrew.png"
-                     style="position: relative; top: 0px; left: -86px; width: 250px;" />
-            </div>
-            <p class="quote color4 font-apple center">Andrew Collins</p>
-        </div>
-
-
+        
         <div class=third>
             <div class="circle circle-small">
                 <img src="assets/tj&will1.jpg"
@@ -312,7 +296,7 @@
                 <img src="assets/mark.png"
                      style="position: relative;top: -3px; left: -55px;" width=211px />
             </div>
-            <p class="quote color4 font-apple center">Mark</p>
+            <p class="quote color4 font-apple center">Mark Urban</p>
         </div>
 
         <div class="third">
@@ -423,7 +407,7 @@
     <%// jQuery CDN %>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <%//Script for rotating fint --%>
-    <script>
+    <%--<script>
         var counter = 1;
         $(document).ready(function () {
 
@@ -442,7 +426,7 @@
 
             counter++;
         });
-</script>
+</script>--%>
 
 </body>
 </html>
