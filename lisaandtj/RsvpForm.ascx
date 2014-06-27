@@ -26,7 +26,7 @@
 
             <asp:ListItem Value="0" Text="Sadly, I cannot attend :("></asp:ListItem>
 
-            <asp:ListItem Value="1" Text="It'll just be me :) (1 guest)"></asp:ListItem>
+            <asp:ListItem Value="1" Text="It'll just be me :) (1)"></asp:ListItem>
             <asp:ListItem Value="2" Text="Myself and that other person (2)"></asp:ListItem>
             <asp:ListItem Value="3" Text="Me and two others (3)"></asp:ListItem>
             <asp:ListItem Value="4" Text="I'm rolling four deep (4) "></asp:ListItem>
@@ -55,6 +55,41 @@
             OnClick="RsvpButton_Click" />
         
     </p>
+
+        <asp:PlaceHolder ID="YesMessagePlaceHolder" Visible="false" runat="server">
+            <div class="rsvp-message font-annie">
+                <p>
+                    Thanks <asp:Literal ID="GuestNameLiteral" runat="server"></asp:Literal>, We can't wait to celebrate with you!
+                </p>
+                <p>
+                    If your plans change, you can return to the site and resubmit your R.S.V.P any time.
+                </p>
+                <button class="got-it-button button color3 bgcolor2 font-annie">Got it!</button>
+            </div>
+        </asp:PlaceHolder>
+
+         <asp:PlaceHolder ID="NoMessagePlaceHolder" Visible="false" runat="server">
+            <div class="rsvp-message font-annie">
+                <p>
+                   We'll miss you! Hope to see you soon.
+                </p>
+                <p>
+                    If your plans change, you can return to the site and resubmit your R.S.V.P any time.
+                </p>
+                <button class="got-it-button button color3 bgcolor2 font-annie">Got it!</button>
+                
+            </div>
+        </asp:PlaceHolder>
+
+
+        <script>
+            $(document).ready(function () {
+                $(".got-it-button").click(function (e) {
+                    e.preventDefault();
+                    $(".rsvp-message").fadeOut('slow');
+                });
+            });
+    </script>
     </ContentTemplate>
 
 </asp:UpdatePanel>
@@ -62,27 +97,39 @@
 <script runat="server">
     protected void RsvpButton_Click(object sender, EventArgs e)
     {
-        bool success = false;
-        string message = "";
-        
         try
         {
             Guest guest = new Guest();
             guest.Name = GuestNameTextBox.Text;
             guest.Email = GuestEmailTextBox.Text;
             guest.Message = MessageTextBox.Text;
-            guest.Attending = !CannotAttendCheckBox.Checked;
+            //guest.Attending = !CannotAttendCheckBox.Checked;
             guest.Guests = Int32.Parse(NumGuestsDropDownList.SelectedValue);
             guest.DateStamp = DateTime.Now;
 
             town6668Entities1 model = new town6668Entities1();
             model.Guests.Add(guest);
-
             model.SaveChanges();
+
+            ShowMessage(guest.Name, guest.Guests);
         }
         catch
         {
 
+        }
+    }
+
+    protected void ShowMessage(string name, int guests)
+    {
+        
+        if (guests > 0)
+        {
+            GuestNameLiteral.Text = name.Split(' ').First();
+            YesMessagePlaceHolder.Visible = true;
+        }
+        else
+        {
+            NoMessagePlaceHolder.Visible = true;
         }
     }
 </script>

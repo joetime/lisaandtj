@@ -30,6 +30,9 @@
     <link href="style.css" rel="stylesheet" />
     <link href="top.css" rel="stylesheet" />
     <link href="map.css" rel="stylesheet" />
+
+    <%// jQuery CDN %>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -90,6 +93,7 @@
         <p class="font-annie">
             After the ceremony we will all walk over to The Conservatory where we'll start the party!
         </p>
+        
         <h3 class="color5 font-apple">How do I <span class="font-annie bold">R.S.V.P.</span>?</h3>
         <p class="color4 font-annie">
             Easy! Just fill out the <a href="#rsvp">RSVP Form</a> below and you're all set!
@@ -110,31 +114,7 @@
         <p class="font-annie">
             You can check out their <a href="http://njstatefair.org/conservatory/index.html" target="_blank">website</a> for more info.
         </p>
-
-        <!--
-        <br /><br />
-        <p class=font-annie>
-            Here are a few pics to give you the idea. <br />
-            <br />
-
-            <img class=conservatory-image src="https://www.newjerseystatefair.org/assets/images/conservatory_directions.jpg" />
-            <img class=conservatory-image src="https://www.newjerseystatefair.org/assets/images/conservatory_family.jpg" />
-            <img class=conservatory-image src="https://www.newjerseystatefair.org/assets/images/conservatory_social.jpg" />
-                      -->
-        </p>
-        <!--
-        <h3 class="color5 font-apple">Who's in the Wedding?</h3>
-        <p class=font-annie>
-            Funny you should ask! You can read all about that <a href="#weddingparty">here</a> :)
-        </p>
-        -->
-        <!--
-        <h3 class="color5 font-apple">What should I bring?</h3>
-        <p class=font-annie>
-            Your dancin' shoes, and if you'd like, you can get some good gift ideas here:
-        </p>
-        -->
-
+]
         <h3 class="color5 font-apple">Can I crash at your place?</h3>
         <p class="font-annie">
             Sorry, no! But we've set some rooms aside if you are coming from out of town. Check out the 
@@ -146,6 +126,12 @@
             <address>8 North Park Dr<br /> Newton, NJ 07860</address>
             <a href="tel:9739408888">(973) 940-8888</a>
         </div>
+
+        <h3 class="color5 font-apple">What should I wear?</h3>
+        <p class="font-annie">
+            We want everyone to be comfortable... wear whatever makes you happy!
+            Please do remember your dancing shoes :)
+        </p>
 
         <div class="top-link bgcolor2">
             <a href="#top" class="font-annie color3">top</a>
@@ -404,29 +390,7 @@
     </div>
     </form>
 
-    <%// jQuery CDN %>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <%//Script for rotating fint --%>
-    <%--<script>
-        var counter = 1;
-        $(document).ready(function () {
-
-            $("#LMTJ2").hide();
-            $("#LMTJ3").hide();
-
-            $("#LMTJ1, #LMTJ2, #LMTJ3").click(function () {
-                console.log('click');
-
-                $(this).fadeOut();
-                $("#LMTJ" + ((counter % 3) + 1)).fadeIn();
-
-                counter++;
-            });
-
-
-            counter++;
-        });
-</script>--%>
-
+    
+  
 </body>
 </html>
