@@ -302,6 +302,7 @@
             <p class="quote color4 font-apple center">Tobaggan</p>
         </div>
 
+        <!--
         <h3 class="color5 font-apple">Meet the Parents</h3>
 
         <div class=quarter>
@@ -355,7 +356,7 @@
             </div>
             <p class="quote color4 font-apple center">Someones Name</p>
         </div>
-
+        -->
         <div class="top-link bgcolor3">
             <a href=#top class="font-annie color2">top</a>
         </div>
