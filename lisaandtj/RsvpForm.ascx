@@ -125,6 +125,7 @@
             guest.Message = MessageTextBox.Text;
             guest.Shuttle = ShuttleDropDownList.SelectedValue;
             guest.Guests = Int32.Parse(NumGuestsDropDownList.SelectedValue);
+            guest.Attending = guest.Guests > 0;
             guest.DateStamp = DateTime.Now;
 
             town6668Entities1 model = new town6668Entities1();
