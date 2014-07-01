@@ -7,14 +7,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    
-    <%--    
-        <link href='http://fonts.googleapis.com/css?family=Rum+Raisin' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Loved+by+the+King' rel='stylesheet' type='text/css' />
-        <link href='http://fonts.googleapis.com/css?family=Unkempt:400,700|Love+Ya+Like+A+Sister|Kranky|Miltonian|Ribeye+Marrow' rel='stylesheet' type='text/css' />
-        --%>
     <link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Unkempt:400,700' rel='stylesheet' type='text/css' />
@@ -130,14 +122,16 @@
         <h3 class="color5 font-apple">What should I wear?</h3>
         <p class="font-annie">
             We want everyone to be comfortable... wear whatever makes you happy!
+            (The groom won't be wearing a tie, if that helps.)
+        </p>
+        <p>
             Please do remember your dancing shoes :)
         </p>
 
         <div class="top-link bgcolor2">
             <a href="#top" class="font-annie color3">top</a>
         </div>
-        </a>
-        </p>
+        
     </div>
     <div id=level3 class="level bgcolor2">
         <a name=weddingparty></a>

@@ -41,6 +41,7 @@
                     <th>Attending?</th>
                     <th>Guest Name</th><th>Email</th>
                     <th>Guests</th>
+                    <th>Shuttle</th>
                     <th style="text-align:left">Message</th>
                 </tr>
             </thead>
@@ -58,6 +59,7 @@
                                 </td>
                             
                             <td><%# Eval("Guests") %></td>
+                            <td><%# Eval("Shuttle") %></td>
 
                             <td style="text-align:left;font-size:9px"><%# Eval("Message")%></td>
 

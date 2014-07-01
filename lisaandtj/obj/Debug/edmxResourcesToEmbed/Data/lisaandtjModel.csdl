@@ -11,6 +11,8 @@
     <Property Name="Attending" Type="Boolean" Nullable="false" />
     <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="DateStamp" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+    <Property Name="Shuttle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Song">
     <Key>

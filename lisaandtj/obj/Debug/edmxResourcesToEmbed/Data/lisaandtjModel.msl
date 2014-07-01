@@ -4,6 +4,8 @@
     <EntitySetMapping Name="Guests">
       <EntityTypeMapping TypeName="lisaandtj.Guest">
         <MappingFragment StoreEntitySet="Guests">
+          <ScalarProperty Name="Shuttle" ColumnName="Shuttle" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Email" ColumnName="Email" />

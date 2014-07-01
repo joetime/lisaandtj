@@ -36,35 +36,42 @@
         </asp:DropDownList>
         
     </p>
-    <%--<p class="size-small">
-        <label class="font-annie">
-            <asp:CheckBox ID="CannotAttendCheckBox" runat="server" 
-                CssClass="input-checkbox" />
+        <p class="size-small font-annie">
+            We'll be providing shuttle service to and from the <br />
+            <a href="http://www.ihg.com/holidayinnexpress/hotels/us/en/newton/nwtnj/hoteldetail" target="_blank">Holiday Inn Express in Newton, NJ</a>.
+            Do you think you'll be using it?<br />
+            <asp:DropDownList ID="ShuttleDropDownList" runat="server" 
+            CssClass="guests-dropdown font-annie" required>
+
+            <asp:ListItem Value="" Text="..."></asp:ListItem>
+            <asp:ListItem Value="yes" Text="Yes I/we will!"></asp:ListItem>
+            <asp:ListItem Value="no" Text="No, thanks."></asp:ListItem>
+            <asp:ListItem Value="maybe" Text="Maybe... not sure."></asp:ListItem>
             
-            Sadly, I cannot attend :(
-        </label>
-    </p>--%>
-    <p class="size-small color2">
+        </asp:DropDownList>
+        </p>
+    
+        <p class="size-small color2">
         <span class="font-apple">A message for the bride and groom:</span><br />
         <asp:TextBox ID="MessageTextBox" runat="server" TextMode="MultiLine" 
             CssClass="textarea font-georgia size-small guest-message" Rows="5"></asp:TextBox>
         
     </p>
     <p>
-        <asp:Button ID="RsvpButton" runat="server" CssClass="button color3 bgcolor2 font-annie" Text="R.S.V.P"
-            OnClick="RsvpButton_Click" />
-        
+        <asp:Button ID="RsvpButton" ClientIDMode="Static" runat="server" CssClass="button color3 bgcolor2 font-annie" Text="R.S.V.P"
+            OnClick="RsvpButton_Click" style="cursor:pointer" />
     </p>
 
         <asp:PlaceHolder ID="YesMessagePlaceHolder" Visible="false" runat="server">
             <div class="rsvp-message font-annie">
                 <p>
-                    Thanks <asp:Literal ID="GuestNameLiteral" runat="server"></asp:Literal>, We can't wait to celebrate with you!
+                    Thanks <asp:Literal ID="GuestNameLiteral" runat="server"></asp:Literal>! We can't wait to celebrate with you!
                 </p>
                 <p>
                     If your plans change, you can return to the site and resubmit your R.S.V.P any time.
                 </p>
-                <button class="got-it-button button color3 bgcolor2 font-annie">Got it!</button>
+                <button class="got-it-button button color3 bgcolor2 font-annie"
+                    onclick="return closeMessage();">Got it!</button>
             </div>
         </asp:PlaceHolder>
 
@@ -76,20 +83,33 @@
                 <p>
                     If your plans change, you can return to the site and resubmit your R.S.V.P any time.
                 </p>
-                <button class="got-it-button button color3 bgcolor2 font-annie">Got it!</button>
-                
+                <button class="got-it-button button color3 bgcolor2 font-annie" style="cursor:pointer"
+                    onclick='return closeMessage();'>Got it!</button>    
+            </div>
+        </asp:PlaceHolder>
+
+        <asp:PlaceHolder ID="ErrorMessagePlaceHolder" Visible="false" runat="server">
+            <div class="rsvp-message font-annie">
+                <p>
+                    Ooops, something's not right here... Review your answers and try to submit the form again.<br />
+                    If you're still having issues, you can email your RSVP info to Lisa at <a href="mailto:lisamscala@gmail.com">lisamscala@gmail.com</a>
+                </p>
+                <p>
+                    If your plans change, you can return to the site and resubmit your R.S.V.P any time.
+                </p>
+                <button class="got-it-button button color3 bgcolor2 font-annie" style="cursor:pointer"
+                    onclick='return closeMessage();'>Got it!</button>    
             </div>
         </asp:PlaceHolder>
 
 
         <script>
-            $(document).ready(function () {
-                $(".got-it-button").click(function (e) {
-                    e.preventDefault();
-                    $(".rsvp-message").fadeOut('slow');
-                });
-            });
-    </script>
+            function closeMessage() {
+                $('.rsvp-message').fadeOut();
+                return false;
+            }
+        </script>
+    
     </ContentTemplate>
 
 </asp:UpdatePanel>
@@ -103,7 +123,7 @@
             guest.Name = GuestNameTextBox.Text;
             guest.Email = GuestEmailTextBox.Text;
             guest.Message = MessageTextBox.Text;
-            //guest.Attending = !CannotAttendCheckBox.Checked;
+            guest.Shuttle = ShuttleDropDownList.SelectedValue;
             guest.Guests = Int32.Parse(NumGuestsDropDownList.SelectedValue);
             guest.DateStamp = DateTime.Now;
 
@@ -115,7 +135,7 @@
         }
         catch
         {
-
+            ErrorMessagePlaceHolder.Visible = true;
         }
     }
 
