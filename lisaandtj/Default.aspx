@@ -106,7 +106,7 @@
         <p class="font-annie">
             You can check out their <a href="http://njstatefair.org/conservatory/index.html" target="_blank">website</a> for more info.
         </p>
-]
+
         <h3 class="color5 font-apple">Can I crash at your place?</h3>
         <p class="font-annie">
             Sorry, no! But we've set some rooms aside if you are coming from out of town. Check out the 
@@ -124,7 +124,7 @@
             We want everyone to be comfortable... wear whatever makes you happy!
             (The groom won't be wearing a tie, if that helps.)
         </p>
-        <p>
+        <p class="font-annie">
             Please do remember your dancing shoes :)
         </p>
 
@@ -183,8 +183,8 @@
 
         <div class=third>
             <div class="circle circle-small">
-                <img src="assets/amelia&me.jpg"
-                     style="position: relative; width: 140px; top: 0px; left: -30px;" />
+                <img src="assets/lisa&amelia.jpg"
+                     style="position: relative; width: 197px; top: 0px; left: -30px;" />
             </div>
             <p class="quote color4 font-apple center">Amelia Wojtusiak</p>
         </div>
@@ -213,7 +213,7 @@
         <div class=half>
             <div class="circle circle-small">
                 <img src="assets/tj&mariaserp.jpg"
-                     style="position: relative; width: 519px; top: -174px; left: -123px;" />
+                     style="position: relative; width: 486px; top: -151px; left: -123px;" />
             </div>
             <p class="quote color4 font-apple center">Maria Serpineto</p>
         </div>
@@ -224,14 +224,14 @@
         <div class=third>
             <div class="circle circle-small">
                 <img src="assets/lisa&stephen.png"
-                     style="position: relative; top: -33px; left: -138px; width: 377px;" />
+                     style="position: relative; top: -19px;left: -45px;width: 209px;" />
             </div>
             <p class="quote color4 font-apple center">Stephen Marchiano</p>
         </div>
         <div class=third>
             <div class="circle circle-small">
                 <img src="assets/lisaregina&joe.png"
-                     style="position: relative; top: -73px; left: -179px; width: 419px;" />
+                     style="position: relative; top: -14px; left: -51px; width: 248px;" />
             </div>
             <p class="quote color4 font-apple center">Joe Scala</p>
         </div>
@@ -297,7 +297,7 @@
         <div class=third>
             <div class="circle circle-small">
                 <img src="assets/toby.png"
-                     style="position: relative;top: -198px; left: -20px; width: 300px;" />
+                     style="position: relative; top: -86px; left: -30px; width: 216px;" />
             </div>
             <p class="quote color4 font-apple center">Tobaggan</p>
         </div>
@@ -380,7 +380,7 @@
         <span class="color4 size-small font-annie">
 
             Website designed with love by Joe
-
+            
         </span>
     </div>
     </form>

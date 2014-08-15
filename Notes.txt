@@ -1,11 +1,12 @@
 
-CRITICAL 1. Confirmation message
-Yes: "Can't wait to celebrate with you!"
-No: "We'll miss you! Hope to see you soon."
-"If you need to change your RSVP you can fill out the form again."
+XXX CRITICAL 1. Confirmation message
+	Yes: "Can't wait to celebrate with you!"
+	No: "We'll miss you! Hope to see you soon."
+	"If you need to change your RSVP you can fill out the form again."
 
-CRITICAL 2. New pictures (Amelia, Mom & Dad, Urbans) / Fix pictures
+XXX CRITICAL 2. New pictures (Amelia, Mom & Dad, Urbans) / Fix pictures
 
+XXX CRITICAL 3. Shuttle - need to ask if guest will be using it
 --------------------------------------------------------------------
 IMPORTANT
 

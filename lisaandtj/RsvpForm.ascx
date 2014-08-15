@@ -4,8 +4,16 @@
 <%--<asp:ScriptManagerProxy runat="server">
 </asp:ScriptManagerProxy>--%>
 
-<asp:UpdatePanel runat="server">
-    <ContentTemplate>
+
+<%--<asp:UpdateProgress runat="server" AssociatedUpdatePanelID="UpdatePanel1">
+    <ProgressTemplate>
+        One Moment...
+    </ProgressTemplate>
+
+</asp:UpdateProgress>
+
+<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+    <ContentTemplate>--%>
 
     <p>
         <asp:TextBox ID="GuestNameTextBox" runat="server" CssClass="font-apple bgcolor3" type="text" placeholder="My Name"
@@ -58,8 +66,9 @@
         
     </p>
     <p>
-        <asp:Button ID="RsvpButton" ClientIDMode="Static" runat="server" CssClass="button color3 bgcolor2 font-annie" Text="R.S.V.P"
-            OnClick="RsvpButton_Click" style="cursor:pointer" />
+        <button type="submit" class="button color3 bgcolor2 font-annie" style="cursor:pointer" onclick="return doPost();">R.S.V.P.</button>
+        <!----<asp:Button ID="RsvpButton" ClientIDMode="Static" runat="server" CssClass="button color3 bgcolor2 font-annie" Text="R.S.V.P"
+            OnClick="RsvpButton_Click" style="cursor:pointer" />-->
     </p>
 
         <asp:PlaceHolder ID="YesMessagePlaceHolder" Visible="false" runat="server">
@@ -104,19 +113,60 @@
 
 
         <script>
+            function doPost() {
+                
+                $.ajax({
+                    type: "POST",
+                    url: "Service/RsvpService.asmx/HelloWorld",
+                    data: "",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (response) {
+                        alert("success: " + response.d);
+                    },
+                    error: function (response, aa) {
+                        alert("fail");
+                        return false;
+                    }
+                });
+
+                // so it doesnt post back
+                return false;
+            }
+
             function closeMessage() {
                 $('.rsvp-message').fadeOut();
                 return false;
             }
         </script>
     
-    </ContentTemplate>
+<%--    </ContentTemplate>
 
-</asp:UpdatePanel>
+</asp:UpdatePanel>--%>
+
+
 
 <script runat="server">
+
+    
+
     protected void RsvpButton_Click(object sender, EventArgs e)
     {
+        //if (GuestNameTextBox.Text.Trim().Length > 2)
+        //{
+        //    ErrorMessagePlaceHolder.Visible = true;
+        //    return;
+        //}
+
+        //if (!GuestEmailTextBox.Text.Trim().Contains('@')
+        //    || !GuestEmailTextBox.Text.Trim().Contains('.'))
+        //{
+        //    ErrorMessagePlaceHolder.Visible = true;
+        //    return;
+        //}
+
+        System.Threading.Thread.Sleep(10000);
+        
         try
         {
             Guest guest = new Guest();

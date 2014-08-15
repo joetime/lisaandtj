@@ -40,6 +40,15 @@ namespace lisaandtj {
         protected global::System.Web.UI.WebControls.DropDownList NumGuestsDropDownList;
         
         /// <summary>
+        /// ShuttleDropDownList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ShuttleDropDownList;
+        
+        /// <summary>
         /// MessageTextBox control.
         /// </summary>
         /// <remarks>
@@ -83,5 +92,14 @@ namespace lisaandtj {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder NoMessagePlaceHolder;
+        
+        /// <summary>
+        /// ErrorMessagePlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder ErrorMessagePlaceHolder;
     }
 }

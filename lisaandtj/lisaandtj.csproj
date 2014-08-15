@@ -67,6 +67,7 @@
   <ItemGroup>
     <Content Include="assets\invites\frenchy.ttf" />
     <Content Include="assets\invites\JennaSue.ttf" />
+    <Content Include="assets\lisa&amp;amelia.jpg" />
     <Content Include="packages.config" />
     <EntityDeploy Include="Data\lisaandtjModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -139,6 +140,7 @@
     <Content Include="RsvpForm.ascx" />
     <Content Include="Rsvps\Default.aspx" />
     <Content Include="Rsvps\rsvps.css" />
+    <Content Include="Service\RsvpService.asmx" />
     <Content Include="style.css" />
     <Content Include="top.css" />
     <Content Include="Web.config" />
@@ -186,6 +188,10 @@
     </Compile>
     <Compile Include="Rsvps\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service\RsvpService.asmx.cs">
+      <DependentUpon>RsvpService.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
