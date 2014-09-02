@@ -66,7 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\invites\frenchy.ttf" />
+    <Content Include="assets\invites\greenbird.png" />
     <Content Include="assets\invites\JennaSue.ttf" />
+    <Content Include="assets\invites\redbird.png" />
     <Content Include="assets\lisa&amp;amelia.jpg" />
     <Content Include="packages.config" />
     <EntityDeploy Include="Data\lisaandtjModel.edmx">

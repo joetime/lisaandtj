@@ -28,16 +28,17 @@ body {
     position: absolute;
     /*border: 1px solid red;*/
     left: 50%;
+    z-index: 1000;
 }
 .bird img {
-    height: 50px;
+    height: 70px;
 }
 #redbird {
-    margin-left: -115px;
-    top: 59px;
+    margin-left: -100px;
+    top: 34px;
 }
 #greenbird {
-    top: 48px;
+    top: 28px;
     margin-left: 7px;
 }
 

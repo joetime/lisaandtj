@@ -40,10 +40,10 @@
         <div id="spacer"></div>
 
         <div id="redbird" class="bird">
-            <img src="assets/invites/redbird.jpg" />
+            <img src="assets/invites/redbird.png" />
         </div>
         <div id="greenbird" class="bird">
-            <img src="assets/invites/greenbird.jpg" />
+            <img src="assets/invites/greenbird.png" />
         </div>
 
         <div id="wreath">
